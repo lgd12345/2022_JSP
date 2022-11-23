@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="dto.Person"/>
+    <fullyQualifiedTypeName name="dto.Animal"/>
+    <fullyQualifiedTypeName name="ch04_com.dao.Person"/>
+    <fullyQualifiedTypeName name="ch18.com.model.Person"/>
+    <fullyQualifiedTypeName name="com.spring.animal.vo.AnimalVO"/>
+    <fullyQualifiedTypeName name="com.spring.animal.dao.AnimalDAO"/>
+    <fullyQualifiedTypeName name="com.spring.member.service.AnimalService"/>
+    <fullyQualifiedTypeName name="com.spring.member.vo.AnimalVO"/>
+    <fullyQualifiedTypeName name="com.spring.member.dao.AnimalDAO"/>
+    <fullyQualifiedTypeName name="com.spring.ex01.MemberDAO"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+</qualifiedTypeNameHistroy>

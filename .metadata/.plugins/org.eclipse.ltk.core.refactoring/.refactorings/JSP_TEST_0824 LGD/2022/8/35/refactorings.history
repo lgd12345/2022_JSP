@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;JSP_TEST_0824 LGD&apos;&#x0D;&#x0A;- Original project: &apos;JSP_TEST_0824 LGD&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JSP_TEST_0824 LGD/src/bundle&#x0D;&#x0A;     JSP_TEST_0824 LGD/src/dao&#x0D;&#x0A;     JSP_TEST_0824 LGD/src/dto&#x0D;&#x0A;     JSP_TEST_0824 LGD/src/filter" description="Delete elements" element1="/src&lt;filter" element2="/src&lt;dto" element3="/src&lt;dao" element4="/src&lt;bundle" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1661300653428" subPackages="false" version="1.0"/>
+</session>

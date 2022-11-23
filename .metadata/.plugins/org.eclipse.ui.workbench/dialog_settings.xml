@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
+			<item value="org.eclipse.jst.ejb.ui"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.debug.ui.java"/>
+			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
+			<item value="org.eclipse.jst.j2ee.internal"/>
+			<item value="org.eclipse.emf.codegen.ui.JETNewWizards"/>
+			<item value="org.eclipse.wst.jsdt.ui.java"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ExternalProject"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\admin\Downloads\test_pro21_5.zip"/>
+			<item value="C:\Users\admin\Downloads\gkgkgk.zip"/>
+			<item value="C:\Users\admin\Downloads\애니벌회원.zip"/>
+			<item value="C:\Users\admin\Downloads\웹마켓게시판수정.zip"/>
+			<item value="C:\Users\admin\Downloads\BoardController.zip"/>
+			<item value="C:\Users\admin\Downloads\이국두_ch14_세션_쿠키 연습해보기_버전.zip"/>
+			<item value="C:\Users\admin\Downloads\WebMarket주문하기.zip"/>
+			<item value="C:\Users\admin\Downloads\이름_메뉴,장바구니,동물수정삭제,로그,관리자이름수정 버전.zip"/>
+			<item value="C:\Users\admin\Downloads\이국두_연습해보기_애니멀수정,장바구니,메뉴_관리자이름바뀜,로그파일바뀜버전.zip"/>
+			<item value="C:\Users\admin\Downloads\이국두_06_joinForm 연습해보기_회원가입_버전.zip"/>
+			<item value="C:\Users\admin\Downloads\이국두_ch04_useBean 연습해보기_Animal버전.zip"/>
+			<item value="C:\Users\admin\Downloads\ㅇㅇㅇㅇ.zip"/>
+			<item value="C:\Users\admin\Downloads\ㅇㅇㅇ.zip"/>
+			<item value="C:\Users\admin\Downloads\이국두_ch04_useBean 연습해보기_Animals버전(jsp).zip"/>
+			<item value="C:\Users\admin\Downloads\이국두_ch03_ampam기본타자연습.zip"/>
+			<item value="C:\Users\admin\Downloads\이국두_ch02_부트스트랙적용연습하기.zip"/>
+			<item value="이국두_ch02_부트스트랙적용연습하기.zip"/>
+			<item value="C:\Users\admin\Downloads\이국두_20220804.zip"/>
+			<item value="C:\Users\admin\Downloads\test.zip"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<security-role>
+		<description></description>
+		<role-name>admin</role-name>
+	</security-role>
+	
+	<security-constraint>
+		<display-name>WebMarket Security</display-name>
+		<web-resource-collection>
+			<web-resource-name>JSPBook</web-resource-name>
+			<description></description>
+			<url-pattern>/ch10_sol/security02.jsp</url-pattern>  <!-- 여기서 실행하는 것 실행경로가 01로 주면 01을 실행해야함 결과 값이 01로 나옴-->
+			<http-method>GET</http-method>                       <!-- 여기서 실행하는 것 실행경로가 02로 주면 02을 실행해야함 결과 값이 02로 나옴-->
+		</web-resource-collection>
+		
+		<auth-constraint>
+			<description>권한 관리자명</description>
+			<role-name>admin</role-name>
+		</auth-constraint>
+		
+	</security-constraint>
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/ch10_sol/login.jsp</form-login-page>  <!-- 로그인 하는 페이지 -->
+			<form-error-page>/ch10_sol/login_failed.jsp</form-error-page><!-- 로그인에러페이지 -->
+		</form-login-config>
+	</login-config>
+
+<error-page>
+		<error-code>500</error-code>
+		<location>/ch11_sol/errorCode_error.jsp</location>
+	</error-page>
+	
+		<servlet>
+		<servlet-name>myController2</servlet-name>
+ 		<servlet-class>ch18.coms.controller.ControllerServlet2</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+		 <servlet-name>myController2</servlet-name>
+ 		<url-pattern>/ch18_ex/ControllerServlet2</url-pattern>
+	 </servlet-mapping>	
+
+</web-app>

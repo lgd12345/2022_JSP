@@ -1,0 +1,82 @@
+<%@page import="java.net.URLEncoder"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- <h1>포워드 테스트 페이지입니다.</h1> -->
+	<%-- <jsp:forward page="b.jsp"/> --%>
+	<!-- 문서가 불러오기 덧씌워짐 -->
+	<!-- <h1>인클루드 include 테스트페이지입니다.</h1> -->
+	<%-- 	<jsp:include page="b.jsp"></jsp:include> --%>
+	<!-- 문서가 포함됨 -->
+	<hr>
+	<br>
+	<h1>param 액선 태그 테스트 페이지입니다.</h1>
+	<%-- <jsp:include page="b.jsp">
+		<jsp:param name="date1" value="<%=new java.util.Date()%>" />
+	</jsp:include> --%>
+	<br>
+	<%-- 	<h1>param2 액선 태그 테스트 페이지입니다.</h1>
+	<jsp:forward page="b.jsp">
+		<jsp:param name="id" value="admin" />
+		<jsp:param name="name" value='<%=java.net.URLEncoder.encode("이국두")%>'/>
+		
+		<jsp:param name="email" value="l@naver.com" />
+		<jsp:param name="email2" value='<%=java.net.URLEncoder.encode("l@naver.com")%>'/>
+	</jsp:forward>
+	 --%>
+<%-- 	<h2>param3</h2>
+	<jsp:include page="b.jsp">
+		<jsp:param name="date3"
+			value="<%=java.util.Calendar.getInstance().getTime()%>" />
+	</jsp:include> --%>
+	<br>
+	<!-- 자바빈즈 -->
+	<jsp:useBean id="date1234" class="java.util.Date"/>
+	<h2>시간 예시, useBean으로 사용하기</h2>
+	<h2><%=date1234%></h2>
+	<br>
+		<jsp:useBean id="bean234" class="ch04_com.dao.Calc"/>
+	<h2>process라는이름의 메서드예시, useBean으로 사용하기.</h2>
+	<h2><%int result = bean234.process(5);%></h2>
+	<h2><%=result%></h2>
+<br>
+		<jsp:useBean id="pow1" class="ch04_com.dao.Calc"/>
+	<h2>pow라는이름의 메서드예시, useBean으로 사용하기.</h2>
+	<h2><%int result2 = pow1.pow(5);%></h2>
+	<h2><%=result2%></h2>
+<br>
+<hr>
+		<jsp:useBean id="p1" class="ch04_com.dao.Person" scope="request"/>
+		<!--scope="request" 페이지가 떠있을 때까지만 유효한 변수 -->
+	<h2>Person라는이름의 클래스의 멤버 사용 예시, useBean으로 사용하기.</h2>
+	<% p1.setId("1"); %>
+	<% p1.setName("이야옹"); %>
+	<% p1.setEmail("lee@naver.com"); %>
+	<!--setProperty 마지막에 입력한게 출력된다. -->
+	<jsp:setProperty name="p1" property="id" value="leeeeee"/>
+	<jsp:setProperty name="p1" property="name" value="이야옹"/>
+	<jsp:setProperty name="p1" property="email" value="Lee@nave.com"/>
+	<!-- getProperty -->
+	<h2>이름= <jsp:getProperty name="p1" property="id"/></h2>
+	<jsp:getProperty name="p1" property="name"/>
+	<jsp:getProperty name="p1" property="email"/>
+
+<%-- 	<h2>아이디= <%=p1.getId()%></h2>
+	<h2>이름= <%=p1.getName()%></h2>
+	<h2>이메일= <%=p1.getEmail()%></h2> --%>
+	<br>
+	<jsp:useBean id="f1" class="ch04_com.dao.Food" scope="request"/>
+	<h2>Food이름의 클래스의 멤버 사용, useBean으로사용</h2>
+	<% f1.setName("초코");%>
+	<h2>이름= <%=f1.getName()%></h2>
+	
+	
+
+</body>
+</html>

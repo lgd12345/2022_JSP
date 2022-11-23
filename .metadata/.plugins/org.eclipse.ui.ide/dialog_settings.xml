@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\admin\Desktop\스프링소스\006895-master\pro23"/>
+			<item value="C:\Users\admin\Downloads\이상용_Spring_참고jdbc확인__0819"/>
+			<item value="C:\Users\admin\Downloads\이상용_Spring_참고jdbc확인__0819\test_pro22_2"/>
+			<item value="C:\Users\admin\Downloads\test_pro21_2"/>
+			<item value="C:\Users\admin\Downloads\ㅇㅇㅇㅇ"/>
+			<item value="C:\Users\admin\Desktop\서버프로그램구현소스\WebMarket_18장"/>
+			<item value="C:\Users\admin\Desktop\서버프로그램구현소스\WebMarket_02장"/>
+			<item value="C:\Users\admin\Desktop\서버프로그램구현소스\WebMarket_01장"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\admin\Downloads\이상용_Spring_참고Mybatis회원가입창_목록보기__0822.zip"/>
+			<item value=""/>
+			<item value="C:\Users\admin\Downloads\gkgkgk.zip"/>
+			<item value="C:\Users\admin\Downloads\test.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="306"/>
+		<item key="DIALOG_Y_ORIGIN" value="309"/>
+	</section>
+</section>

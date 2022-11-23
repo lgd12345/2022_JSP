@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<security-role>
+		<description></description>
+		<role-name>manager</role-name>
+	</security-role>
+	<security-constraint>
+		<display-name>WebMarket Security</display-name>
+		<web-resource-collection>
+			<web-resource-name>WebMarket</web-resource-name>
+			<description></description>
+			<url-pattern>/addProduct.jsp</url-pattern>
+			<url-pattern>/editProduct.jsp</url-pattern>
+			<url-pattern>/addProductAnimal.jsp</url-pattern>
+			<url-pattern>/editProductAnimal.jsp</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<description>권한 관리자명</description>
+			<role-name>manager</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/login.jsp</form-login-page>
+			<form-error-page>/login_failed.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/exceptionNoPage.jsp</location>			<!--404에러가 나면 이페이지를 보여줌 -->
+	</error-page>
+
+	<filter>
+		<filter-name>LogFilter</filter-name>
+		<filter-class>filter.LogFilter</filter-class>     <!--필터 로그 콘솔에 찍힌다 -->
+	</filter>
+	<filter-mapping>
+		<filter-name>LogFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>LogFileFilter</filter-name>
+		<filter-class>filter.LogFileFilter</filter-class>   <!--필터 로그부분을 파일상에 기록한다 -->
+		<init-param>
+			<param-name>filename</param-name>
+			<param-value>c:\\logs_0812\\webmarket_lgd.log</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>LogFileFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>BoardController</servlet-name>
+		<servlet-class>mvc.controller.BoardController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BoardController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
